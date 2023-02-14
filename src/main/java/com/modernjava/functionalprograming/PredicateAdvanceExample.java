@@ -15,11 +15,13 @@ public class PredicateAdvanceExample {
 
         List<Instructor> instructors = Instructors.getAll();
 
+        //print the name of all instructor who teaches online
         instructors.forEach(s1 -> {
             if(predicate1.test(s1))
-                System.out.println(s1.getName());
+                System.out.print(s1.getName()+", ");
         });
-
+        System.out.println();
+        //print the name of all instructor who teaches online && years of experience > 10 years
         instructors.forEach(s1 -> {
             if(predicate1.and(predicate2).test(s1))
                 System.out.println(s1);

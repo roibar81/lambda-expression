@@ -3,7 +3,7 @@ package com.modernjava.functionalprograming;
 import java.util.List;
 import java.util.function.Consumer;
 
-public class ConsumerExample2 {
+public class ConsumerAdvace {
 
     public static void main(String[] args) {
         List<Instructor> instructors = Instructors.getAll();

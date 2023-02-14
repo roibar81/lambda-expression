@@ -3,7 +3,7 @@ package com.modernjava.functionalprograming;
 import java.util.List;
 import java.util.function.BiConsumer;
 
-public class BiConsumerExample2 {
+public class BiConsumerAdvance {
 
     public static void main(String[] args) {
         List<Instructor> instructors = Instructors.getAll();

@@ -9,11 +9,11 @@ public class Instructors {
     public static List<Instructor> getAll() {
         Instructor instructor1 = new Instructor("Roi", 10, "Software Development", "M", true,
                 Arrays.asList("Java Programing", "C++ Programing", "Python Programing"));
-        Instructor instructor2 = new Instructor("Jenny", 5, "Engineer", "F", false,
+        Instructor instructor2 = new Instructor("Jenny", 5, "Engineer", "F", true,
                 Arrays.asList("Multi-Thread Programing", "CI/CD", "Unit Testing"));
         Instructor instructor3 = new Instructor("Guy", 6, "Manager", "M", false,
                 Arrays.asList("C++ Programing", "C Programing", "React Native"));
-        Instructor instructor4 = new Instructor("Moshe", 15, "Manager", "M", true,
+        Instructor instructor4 = new Instructor("Moshe", 10, "Manager", "M", false,
                 Arrays.asList("Java Programing", "Angular Programing", "React Native"));
         Instructor instructor5 = new Instructor("Shay", 15, "Principal Engineer", "M", true,
                 Arrays.asList("Java Programing", "Java Multi-Thread Programing", "React Native"));
