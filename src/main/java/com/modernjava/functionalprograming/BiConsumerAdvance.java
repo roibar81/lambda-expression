@@ -14,12 +14,12 @@ public class BiConsumerAdvance {
 
         //print out names and list of courses
         System.out.println("-------------------------------------------------");
-        BiConsumer<String, List<String>> biConsumer2 = (name, courses) -> System.out.println("Name is: " + name + " his courses are: " + courses);
+        BiConsumer<String, List<String>> biConsumer2 = (name, courses) -> System.out.println("Name is: " + name + " Teach courses: " + courses);
         instructors.forEach(s1 -> biConsumer2.accept(s1.getName(), s1.getCourses()));
 
         //print out name and gender of all instructors who teaches online
         System.out.println("-------------------------------------------------");
-        BiConsumer<String, String> biConsumer3 = (name, gender) -> System.out.println("Name is: " + name + " his gender is: " + gender);
+        BiConsumer<String, String> biConsumer3 = (name, gender) -> System.out.println("Name is: " + name + " gender is: " + gender);
         instructors.forEach(s1 -> {
             if (s1.isOnlineCourses())
                 biConsumer3.accept(s1.getName(), s1.getGender());
